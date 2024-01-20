@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['DISCORD_CLIENT_ID'] = os.getenv('CLIENT_ID')
 app.config['DISCORD_CLIENT_SECRET'] = os.getenv('CLIENT_SECRET')
 app.config['DISCORD_BOT_TOKEN'] = os.getenv('TOKEN')
-app.config['DISCORD_REDIRECT_URI'] = os.getenv('REDIRECT')
+app.config['DISCORD_REDIRECT_URI'] = os.getenv('REDIRECT_URL')
 
 discord = DiscordOAuth2Session(app)
 
